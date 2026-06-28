@@ -1,0 +1,80 @@
+/* Alaa Ahmad */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+}
+
+#gameCanvas {
+    background-color: #0c141f;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ui-container {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px;
+    font-size: 1.5em;
+    user-select: none; /* To prevent the user from selecting anything using the mouse */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.595);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-box {
+    padding: 40px;
+    background: #0b1119;
+    border: 2px solid #eee7e7;
+}
+
+.menu-box h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.menu-box p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.menu-box button {
+    font-size: 1.5em;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #eee7e7;
+    color: #eee7e7;
+}
+
+.menu-box button:hover {
+    background: #eee7e7;
+    color: #0b1119;
+}
+
+.hidden {
+    display: none;
+}

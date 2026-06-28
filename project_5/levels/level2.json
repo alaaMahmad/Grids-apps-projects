@@ -1,0 +1,30 @@
+{
+    "levelName": "level 2",
+    "waves": [
+        {
+            "time": 2,
+            "type": "basic",
+            "count": 4
+        },
+        {
+            "time": 6,
+            "type": "basic",
+            "count": 6
+        },
+        {
+            "time": 10,
+            "type": "tracker",
+            "count": 5
+        },
+        {
+            "time": 15,
+            "type": "basic",
+            "count": 8
+        },
+        {
+            "time": 20,
+            "type": "tracker",
+            "count": 10
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+/* Alaa Ahmad */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 500px;
+    margin: 60px auto;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 2%;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#task-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    width: 75%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid gray;
+    flex-grow: 1; 
+}
+
+button[type="submit"]{
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    margin-left: 5px;
+}
+
+
+.task-item {
+    list-style-type: none;
+    background-color: gray;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center; 
+}
+
+.task-item span {
+    flex-grow: 1; /* Makes the text take up available space */
+    margin: 0 10px; 
+}
+
+
+.task-item.completed span {
+    text-decoration: line-through;
+    color: green;
+}
+
+.delete-btn {
+    background-color: red; 
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}

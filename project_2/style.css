@@ -1,0 +1,73 @@
+/* Alaa Ahmad */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+body {
+    
+    display: flex;
+    justify-content: center; /* FOR horizontal */
+    align-items: center;
+    height: 700px;
+   
+}
+.calculator {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.521); 
+}
+.calculator-display {
+    background-color:rgb(14, 13, 13);
+    color: white;
+    font-size: xx-large;
+    padding: 20px;
+    text-align: right;
+   
+}
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);/*divides the remaining space into equal 
+    parts. Here, each column will take up an equal share (1/4) of the available space.*/
+    gap: 1px;
+}
+button {
+    padding: 20px;
+    font-size: larger;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+button:hover {
+    background-color: red;
+}
+.key-operator {
+    background-color: rgb(145, 41, 41);
+    color: white;
+}
+.key-operator:hover {
+    background-color: red;
+}
+.key-clear {
+    background-color: rgb(145, 41, 41);
+    color: white;
+}
+.key-clear:hover {
+    background-color: red;
+}
+.key-equal {
+    background-color: green;
+    color: white;
+    grid-column: 4/ 5;
+    grid-row: 5 / 6;
+}
+.key-equal:hover {
+    background-color: red;
+}
+.calculator-keys > button[value="+"] { grid-column: 4 / 5; grid-row: 1 / 2; }
+.calculator-keys > button[value="-"] { grid-column: 4 / 5; grid-row: 2 / 3; }
+.calculator-keys > button[value="*"] { grid-column: 4 / 5; grid-row: 3 / 4; }
+.calculator-keys > button[value="/"] { grid-column: 4 / 5; grid-row: 4 / 5; }
+.calculator-keys > button[value="Clear"] { grid-column: 3 / 4; grid-row: 5 / 6; }

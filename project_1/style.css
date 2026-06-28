@@ -1,0 +1,59 @@
+/* Alaa Ahmad */
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+
+.container {
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid gray;
+}
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+#input {
+    width: 75%;
+    padding: 8px;
+    font-size: 16px;
+}
+#btn {
+    width: 20%;
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center; 
+}
+
+/* importent for ui */
+li span {
+    flex-grow: 1; /* Makes the text take up available space */
+    margin: 0 10px; /* Adds space between checkbox and button */
+}
+
+/* apply this style to completed tasks (span in javascript) */
+li.completed span {
+    text-decoration: line-through;
+    color: green;
+}
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
